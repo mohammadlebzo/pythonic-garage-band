@@ -36,6 +36,14 @@ class Musician(ABC):
     def play_solo(self):
         pass
 
+    @abstractmethod
+    def __str__(self):
+        pass
+
+    @abstractmethod
+    def __repr__(self):
+        pass
+
 
 class Guitarist(Musician):
     def __init__(self, name):
